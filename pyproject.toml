@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plateaudit"
+version = "0.1.0"
+description = "Measuring pseudoisochromatic colour-vision plates from the stimulus a browser actually delivers"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Vincent Gonzalez", email = "vincegonzalez@me.com" }]
+keywords = [
+    "colour vision", "color vision", "colorimetry", "pseudoisochromatic",
+    "ishihara", "psychophysics", "vision science", "reproducibility",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+
+# Pinned loosely on purpose: this is an analysis library, and over-pinning makes it
+# harder to install beside the rest of a researcher's environment.
+dependencies = [
+    "numpy>=1.21",
+    "matplotlib>=3.5",
+    "pillow>=9.0",
+]
+
+[project.optional-dependencies]
+# scipy only accelerates neighbour search. local_pairing and figure_recovery both fall
+# back to a brute-force path when it is absent, and the results are identical.
+fast = ["scipy>=1.7"]
+test = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/vince-gonzalez/plateaudit"
+Issues = "https://github.com/vince-gonzalez/plateaudit/issues"
+Method = "https://doi.org/10.5281/zenodo.21310578"
+
+[project.scripts]
+plateaudit-audit = "plateaudit.audit_delivered_plates:main"
+plateaudit-pairing = "plateaudit.local_pairing:main"
+plateaudit-figures = "plateaudit.make_figures:main"
+plateaudit-checks = "plateaudit.reviewer_checks:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

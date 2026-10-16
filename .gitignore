@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+figures/
+
+# Control stimuli written by the self-tests when run with the default tmpdir="."
+ctrl_*.svg
+synth_*.png

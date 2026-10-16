@@ -1,0 +1,303 @@
+{
+ "border_radii": 2.2,
+ "warn_deg": 25.0,
+ "rows": [
+  {
+   "plate": 1,
+   "type": "demonstration",
+   "answer": "12",
+   "n_figure": 101,
+   "n_ground": 484,
+   "axes": {
+    "protan": {
+     "n_pairs": 465,
+     "n_border_figure_dots": 100,
+     "median_deg": 26.8,
+     "q25_deg": 26.8,
+     "q75_deg": 26.8,
+     "frac_aligned": 0.0,
+     "median_xy_sep": 0.3057
+    },
+    "deutan": {
+     "n_pairs": 465,
+     "n_border_figure_dots": 100,
+     "median_deg": 47.3,
+     "q25_deg": 47.3,
+     "q75_deg": 47.3,
+     "frac_aligned": 0.0,
+     "median_xy_sep": 0.3057
+    }
+   }
+  },
+  {
+   "plate": 2,
+   "type": "transformation",
+   "answer": "8",
+   "n_figure": 101,
+   "n_ground": 607,
+   "axes": {
+    "protan": {
+     "n_pairs": 482,
+     "n_border_figure_dots": 100,
+     "median_deg": 9.3,
+     "q25_deg": 6.8,
+     "q75_deg": 10.0,
+     "frac_aligned": 1.0,
+     "median_xy_sep": 0.1942
+    },
+    "deutan": {
+     "n_pairs": 482,
+     "n_border_figure_dots": 100,
+     "median_deg": 20.6,
+     "q25_deg": 11.9,
+     "q75_deg": 24.7,
+     "frac_aligned": 0.847,
+     "median_xy_sep": 0.1942
+    }
+   }
+  },
+  {
+   "plate": 3,
+   "type": "transformation",
+   "answer": "29",
+   "n_figure": 148,
+   "n_ground": 490,
+   "axes": {
+    "protan": {
+     "n_pairs": 693,
+     "n_border_figure_dots": 145,
+     "median_deg": 33.3,
+     "q25_deg": 11.5,
+     "q75_deg": 47.4,
+     "frac_aligned": 0.374,
+     "median_xy_sep": 0.131
+    },
+    "deutan": {
+     "n_pairs": 693,
+     "n_border_figure_dots": 145,
+     "median_deg": 23.2,
+     "q25_deg": 11.8,
+     "q75_deg": 35.3,
+     "frac_aligned": 0.585,
+     "median_xy_sep": 0.131
+    }
+   }
+  },
+  {
+   "plate": 4,
+   "type": "transformation",
+   "answer": "5",
+   "n_figure": 99,
+   "n_ground": 647,
+   "axes": {
+    "protan": {
+     "n_pairs": 535,
+     "n_border_figure_dots": 99,
+     "median_deg": 10.0,
+     "q25_deg": 7.2,
+     "q75_deg": 37.6,
+     "frac_aligned": 0.708,
+     "median_xy_sep": 0.1151
+    },
+    "deutan": {
+     "n_pairs": 535,
+     "n_border_figure_dots": 99,
+     "median_deg": 24.7,
+     "q25_deg": 17.7,
+     "q75_deg": 54.2,
+     "frac_aligned": 0.531,
+     "median_xy_sep": 0.1151
+    }
+   }
+  },
+  {
+   "plate": 5,
+   "type": "transformation",
+   "answer": "3",
+   "n_figure": 117,
+   "n_ground": 538,
+   "axes": {
+    "protan": {
+     "n_pairs": 470,
+     "n_border_figure_dots": 109,
+     "median_deg": 14.9,
+     "q25_deg": 7.8,
+     "q75_deg": 18.5,
+     "frac_aligned": 0.815,
+     "median_xy_sep": 0.2325
+    },
+    "deutan": {
+     "n_pairs": 470,
+     "n_border_figure_dots": 109,
+     "median_deg": 21.4,
+     "q25_deg": 20.7,
+     "q75_deg": 32.0,
+     "frac_aligned": 0.542,
+     "median_xy_sep": 0.2325
+    }
+   }
+  },
+  {
+   "plate": 6,
+   "type": "transformation",
+   "answer": "15",
+   "n_figure": 142,
+   "n_ground": 608,
+   "axes": {
+    "protan": {
+     "n_pairs": 668,
+     "n_border_figure_dots": 141,
+     "median_deg": 9.3,
+     "q25_deg": 8.1,
+     "q75_deg": 13.5,
+     "frac_aligned": 0.94,
+     "median_xy_sep": 0.1721
+    },
+    "deutan": {
+     "n_pairs": 668,
+     "n_border_figure_dots": 141,
+     "median_deg": 17.7,
+     "q25_deg": 11.9,
+     "q75_deg": 28.1,
+     "frac_aligned": 0.747,
+     "median_xy_sep": 0.1721
+    }
+   }
+  },
+  {
+   "plate": 7,
+   "type": "transformation",
+   "answer": "74",
+   "n_figure": 188,
+   "n_ground": 520,
+   "axes": {
+    "protan": {
+     "n_pairs": 694,
+     "n_border_figure_dots": 170,
+     "median_deg": 13.8,
+     "q25_deg": 6.0,
+     "q75_deg": 18.7,
+     "frac_aligned": 0.809,
+     "median_xy_sep": 0.1543
+    },
+    "deutan": {
+     "n_pairs": 694,
+     "n_border_figure_dots": 170,
+     "median_deg": 26.1,
+     "q25_deg": 8.3,
+     "q75_deg": 32.7,
+     "frac_aligned": 0.5,
+     "median_xy_sep": 0.1543
+    }
+   }
+  },
+  {
+   "plate": 8,
+   "type": "vanishing",
+   "answer": "6",
+   "n_figure": 81,
+   "n_ground": 619,
+   "axes": {
+    "protan": {
+     "n_pairs": 457,
+     "n_border_figure_dots": 80,
+     "median_deg": 11.1,
+     "q25_deg": 3.0,
+     "q75_deg": 18.8,
+     "frac_aligned": 0.939,
+     "median_xy_sep": 0.1543
+    },
+    "deutan": {
+     "n_pairs": 457,
+     "n_border_figure_dots": 80,
+     "median_deg": 23.6,
+     "q25_deg": 8.6,
+     "q75_deg": 32.0,
+     "frac_aligned": 0.574,
+     "median_xy_sep": 0.1543
+    }
+   }
+  },
+  {
+   "plate": 9,
+   "type": "vanishing",
+   "answer": "45",
+   "n_figure": 101,
+   "n_ground": 461,
+   "axes": {
+    "protan": {
+     "n_pairs": 539,
+     "n_border_figure_dots": 100,
+     "median_deg": 11.1,
+     "q25_deg": 3.0,
+     "q75_deg": 18.8,
+     "frac_aligned": 0.926,
+     "median_xy_sep": 0.1459
+    },
+    "deutan": {
+     "n_pairs": 539,
+     "n_border_figure_dots": 100,
+     "median_deg": 23.6,
+     "q25_deg": 8.6,
+     "q75_deg": 32.0,
+     "frac_aligned": 0.589,
+     "median_xy_sep": 0.1459
+    }
+   }
+  },
+  {
+   "plate": 10,
+   "type": "vanishing",
+   "answer": "5",
+   "n_figure": 76,
+   "n_ground": 670,
+   "axes": {
+    "protan": {
+     "n_pairs": 420,
+     "n_border_figure_dots": 76,
+     "median_deg": 12.5,
+     "q25_deg": 4.7,
+     "q75_deg": 19.4,
+     "frac_aligned": 0.855,
+     "median_xy_sep": 0.2311
+    },
+    "deutan": {
+     "n_pairs": 420,
+     "n_border_figure_dots": 76,
+     "median_deg": 14.0,
+     "q25_deg": 3.9,
+     "q75_deg": 27.6,
+     "frac_aligned": 0.685,
+     "median_xy_sep": 0.2311
+    }
+   }
+  },
+  {
+   "plate": 15,
+   "type": "hidden digit",
+   "answer": "nothing",
+   "n_figure": 89,
+   "n_ground": 513,
+   "axes": {
+    "protan": {
+     "n_pairs": 543,
+     "n_border_figure_dots": 89,
+     "median_deg": 56.0,
+     "q25_deg": 21.8,
+     "q75_deg": 61.5,
+     "frac_aligned": 0.268,
+     "median_xy_sep": 0.1596
+    },
+    "deutan": {
+     "n_pairs": 543,
+     "n_border_figure_dots": 89,
+     "median_deg": 49.6,
+     "q25_deg": 35.2,
+     "q75_deg": 77.6,
+     "frac_aligned": 0.047,
+     "median_xy_sep": 0.1596
+    }
+   }
+  }
+ ]
+}

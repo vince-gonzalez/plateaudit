@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Oldest supported and current, so the floor in pyproject stays honest.
+        python-version: ["3.9", "3.12"]
+        # The scipy path and the brute-force fallback must agree, so run both.
+        extras: ["test", "fast,test"]
+    name: py${{ matrix.python-version }} [${{ matrix.extras }}]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[${{ matrix.extras }}]"
+      - name: Run the suite, including the positive controls
+        run: python -m pytest tests/ -v

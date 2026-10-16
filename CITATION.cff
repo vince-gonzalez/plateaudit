@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "plateaudit"
+message: "If you use this software, please cite the method deposit below."
+type: software
+authors:
+  - family-names: Gonzalez
+    given-names: Vincent
+    orcid: "https://orcid.org/0009-0005-3640-014X"
+repository-code: "https://github.com/vince-gonzalez/plateaudit"
+license: MIT
+version: "0.1.0"
+abstract: >-
+  Measurement of pseudoisochromatic colour-vision plates from the stimulus a browser
+  delivers: dot geometry recovered from SVG path data, colorimetry to Smith and Pokorny
+  cone excitations, confusion directions constructed rather than retrieved from a table,
+  and local pairing of figure dots with the ground dots that border them.
+references:
+  - type: article
+    title: >-
+      A Procedural Method for Generating Pseudoisochromatic Plates in the Browser,
+      and the Calibration Limits of Screen-Based Colour-Vision Screening
+    authors:
+      - family-names: Gonzalez
+        given-names: Vincent
+    doi: "10.5281/zenodo.21310578"
+    year: 2026
