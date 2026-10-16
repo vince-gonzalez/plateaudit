@@ -14,8 +14,9 @@ jobs:
       matrix:
         # Oldest supported and current, so the floor in pyproject stays honest.
         python-version: ["3.9", "3.12"]
-        # The scipy path and the brute-force fallback must agree, so run both.
-        extras: ["test", "fast,test"]
+        # With and without the OpenCV raster path, so neither install is
+        # silently broken.
+        extras: ["test", "raster,test"]
     name: py${{ matrix.python-version }} [${{ matrix.extras }}]
     steps:
       - uses: actions/checkout@v4

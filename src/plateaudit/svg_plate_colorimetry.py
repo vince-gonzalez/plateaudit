@@ -289,8 +289,7 @@ def self_test(tmpdir="."):
     weighting and the Dain-form metric all agree with the independently computed declared-range
     numbers, and that a palette known to be off axis still reads off axis.
     """
-    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-    from plate_colorimetry import measure_declared
+    from .plate_colorimetry import measure_declared
 
     print("Control: SVG path vs the declared-range Dain-form value, computed not hardcoded\n")
     print("  %-16s %-8s %9s %9s %9s %7s" % ("palette", "axis", "expected", "centroid", "pca", "delta"))

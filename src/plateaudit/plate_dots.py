@@ -136,7 +136,7 @@ def extract_dots(path, min_radius_px=2.0, sample_frac=0.55, debug=False):
 
 
 def measure_image_dots(path, axes, **kw):
-    from svg_plate_colorimetry import measure_dots
+    from .svg_plate_colorimetry import measure_dots
     dots, info = extract_dots(path, **kw)
     out = {"file": os.path.basename(path), **info}
     if not dots:
@@ -201,7 +201,7 @@ def self_test(svg_dir):
     extraction, not a shared assumption. A JPEG round trip at quality 70 is included because
     every raster plate on the open web has been through one.
     """
-    from svg_plate_colorimetry import measure_svg
+    from .svg_plate_colorimetry import measure_svg
     import re
     files = sorted(glob.glob(os.path.join(svg_dir, "rgblind*plate*.svg")))
     if not files:

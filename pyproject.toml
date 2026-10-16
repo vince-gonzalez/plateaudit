@@ -28,12 +28,18 @@ dependencies = [
     "numpy>=1.21",
     "matplotlib>=3.5",
     "pillow>=9.0",
+    # Colour-class clustering in the image method and in figure recovery. Imported
+    # inside the functions that need it, but NOT guarded, so it is a hard requirement.
+    "scikit-learn>=1.0",
+    # Guarded and optional for neighbour search in local_pairing and figure_recovery,
+    # but NOT guarded in plate_dots.extract_dots. Required, not an extra.
+    "scipy>=1.7",
 ]
 
 [project.optional-dependencies]
-# scipy only accelerates neighbour search. local_pairing and figure_recovery both fall
-# back to a brute-force path when it is absent, and the results are identical.
-fast = ["scipy>=1.7"]
+# The raster pipeline, plate_dots.extract_dots, reads images with OpenCV. Only needed
+# if you are measuring rendered plates rather than SVG markup.
+raster = ["opencv-python>=4.5"]
 test = ["pytest>=7.0"]
 
 [project.urls]

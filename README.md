@@ -29,14 +29,15 @@ and the paper says so. The contribution is that the chain is executable and chec
 pip install plateaudit
 ```
 
-From a checkout, with the optional neighbour-search acceleration and the test extra:
+From a checkout, with the test extra:
 
 ```
-pip install -e ".[fast,test]"
+pip install -e ".[test]"
 ```
 
-Requires Python 3.9 or newer. `scipy` is optional: `local_pairing` and `figure_recovery`
-fall back to a brute-force neighbour search without it and produce identical results.
+Requires Python 3.9 or newer. Add the `raster` extra if you want to measure rendered plate
+images rather than SVG markup: `pip install -e ".[raster,test]"`. That path reads images
+with OpenCV; everything else works without it.
 
 ## A worked example that runs end to end
 

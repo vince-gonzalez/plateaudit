@@ -12,7 +12,7 @@ share, the declared fills alone are usually enough to reproduce.
 ## Running the tests
 
 ```
-pip install -e ".[fast,test]"
+pip install -e ".[test]"
 python -m pytest tests/
 ```
 

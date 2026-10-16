@@ -247,8 +247,8 @@ def compare_spaces():
     """
     import glob
     import json
-    from svg_dot_geometry import extract, drop_backdrop
-    from svg_plate_colorimetry import hex_to_rgb, srgb_to_xy as srgb_xy_arr
+    from .svg_dot_geometry import extract, drop_backdrop
+    from .svg_plate_colorimetry import hex_to_rgb, srgb_to_xy as srgb_xy_arr
 
     ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     _d = os.environ.get("PLATEAUDIT_DATA") or os.path.join(

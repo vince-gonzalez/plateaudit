@@ -170,7 +170,7 @@ def recover(dots, border_radii=2.2, min_minority=0.04, max_minority=0.48, max_co
 def validate(svg_dir, border_radii=2.2):
     """Score recovery against the declared assignment on the ZEISS plates."""
     import glob
-    from svg_dot_geometry import extract, drop_backdrop
+    from .svg_dot_geometry import extract, drop_backdrop
     d = json.load(open(DATA, encoding="utf-8"))
     print("Recovering figure/ground with no answer key, scored against the declared SVG classes.\n")
     print("  %-6s %-15s %6s %7s %7s %8s %8s  %s"
@@ -221,7 +221,7 @@ def main():
         return 0 if validate(a.svg_dir, a.border_radii) else 1
     if not a.image:
         ap.error("--image required unless --validate")
-    from plate_dots import extract_dots
+    from .plate_dots import extract_dots
     for f in a.image:
         dots_raw, info = extract_dots(f)
         dots = [{"x": 0, "y": 0, "r": 1, "rgb": rgb, "hex": None} for rgb, _ in dots_raw]
