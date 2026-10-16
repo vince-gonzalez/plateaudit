@@ -4,7 +4,8 @@ Measuring pseudoisochromatic colour-vision plates from the stimulus a browser ac
 delivers.
 
 [![tests](https://github.com/vince-gonzalez/plateaudit/actions/workflows/tests.yml/badge.svg)](https://github.com/vince-gonzalez/plateaudit/actions/workflows/tests.yml)
-[![DOI](https://img.shields.io/badge/method-10.5281%2Fzenodo.21310578-blue)](https://doi.org/10.5281/zenodo.21310578)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23422998.svg)](https://doi.org/10.5281/zenodo.23422998)
+[![method](https://img.shields.io/badge/method-10.5281%2Fzenodo.21310578-blue)](https://doi.org/10.5281/zenodo.21310578)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Pseudoisochromatic plates, the dot patterns in which a numeral is hidden from observers with
@@ -105,7 +106,9 @@ single comparison fails.
 
 ## Citing
 
-The method is published open access: **https://doi.org/10.5281/zenodo.21310578**
+This release is archived at **https://doi.org/10.5281/zenodo.23422998**
+
+The method it implements is published open access at **https://doi.org/10.5281/zenodo.21310578**
 
 See `CITATION.cff`, and `paper/paper.md` for the software paper.
 
